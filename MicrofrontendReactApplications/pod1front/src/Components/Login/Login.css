@@ -1,0 +1,217 @@
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50%;  
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+            transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+/* .box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+            transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.borderline {
+    position: absolute;
+    top: 0;
+    inset: 0;
+} */
+/* .borderline::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+            transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.borderline::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent,
+            transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+} */
+/* @keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+.box {
+    left: 32%;
+    position: relative;
+    /* width: 320px; */
+    width: 500px;
+    height: 650px;
+    /* height: 350px; */
+    margin: 20px;
+    /* background: #e2d6d6; */
+    background: grey;
+    /* background: #1c1c1c; */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box form {
+    position: absolute;
+    inset: 4px;
+    color: black;
+    /* background: #222; */
+    /* background: #e2d6d6; */
+    background: whitesmoke;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+/* .box form label{
+    color: black;
+} */
+.box form h1 {
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(15, 14, 14);
+    /* color: blue; */
+    font-weight: 1000;
+    text-align: center;
+    letter-spacing: 0.1em;
+    /* border: 1px solid grey; */
+    /* border: 2px solid rgb(56, 55, 55); */
+    border-radius: 5%;
+    padding: 30px;
+}
+.box form .inputbox {
+    position: relative;
+    width: 300px;
+    margin-left: 3px;
+    margin-top: 35px;
+}
+.box form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(14, 14, 15);
+    /* border: 2px solid grey; */
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    color: black;
+    /* color: #fff; */
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputBox span {
+    position: absolute;
+}
+.box form .inputBox input:valid~span,
+.box form .inputBox input:focus~span {
+    color: black;
+    /* color: #fff; */
+    font-size: 0.75em;
+    transform: translate(-34px);
+}
+/* .box form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+} */
+/* .box form .inputBox input:valid~i,
+.box form .inputBox input:focus~i {
+    height: 44px;
+} */
+.box form .links {
+    display: flex;
+    justify-content: space-between;
+}
+.box form .links a {
+    /* margin: 10px 0; */
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: blue;
+    
+    text-decoration: none;
+}
+.box form .links a:hover  {
+    color: rgb(32, 188, 197);
+    /* color: #fff; */
+}
+.box form .inputBox input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px 25px 10px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 50px;
+    margin-top: 10px;
+}
+.box form input[type="submit"]:active {
+    opacity: 0.5;
+ 
+}
+.box form input[type="submit"]{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 1000;
+    background-color: #45f3ff;
+    color: rgb(159, 7, 114);
+    border-radius: 20px;
+}
+.login-button{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 1000;
+    /* background-color: #45f3ff; */
+    background: rgb(18,157,230);
+    background: linear-gradient(90deg, rgba(18,157,230,1) 0%, rgba(169,33,201,1) 54%);
+    color: whitesmoke;
+    /* color: rgb(159, 7, 114); */
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}

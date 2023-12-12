@@ -1,0 +1,67 @@
+#customers {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    /* width: auto; */
+    width: 60%;
+    /* height: 50px; */
+    overflow-y: scroll;
+    margin-top: 2%;
+    margin-left: 8%;
+    /* margin-bottom: 25px; */
+  }
+  #customers #inputs{
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 15px 10px 15px 10px;
+    
+  }
+  #customers td, #customers tr {
+   color: #1d1f3a;
+   font-weight: 550;    
+    
+  }
+  
+  #customers tr:nth-child(odd){background-color: #c4efdb;}
+  #customers tr:nth-child(even){background-color: #c4efe8;}
+  /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
+  
+  /* #customers tr:hover {background-color: #ddd;} */
+  /* #customers tr:hover {background-color:  #c4efdb;} */
+  
+  #customers th {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: left;
+    background-color: #1d1f3a;
+    /* background-color: #04AA6D; */
+    color: whitesmoke;
+    /* color: white; */
+  }
+  #customers p {
+   text-align: center;
+   margin-top: 2%;
+   color: red;
+   font-weight: bold;
+  }
+  #customers #searchPara{
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+
+  }
+
+  .grid_page p{
+    margin-left: 17%;
+  }
+
+h1{
+    color: #1d1f3a;
+    /* color: whitesmoke; */
+    text-align: center;
+    margin-top: 2%;
+}
